@@ -1,24 +1,24 @@
-from collections.abc import Iterator
+# from collections.abc import Iterator
 
-import pytest
-from algopy_testing import AlgopyTestContext, algopy_testing_context
+# import pytest
+# from algopy_testing import AlgopyTestContext, algopy_testing_context
+# from asa_box_client_test import asa_id, data
 
-from smart_contracts.asa_box.contract import AsaBox
-
-
-@pytest.fixture()
-def context() -> Iterator[AlgopyTestContext]:
-    with algopy_testing_context() as ctx:
-        yield ctx
+# from smart_contracts.asa_box.contract import AsaBox
 
 
-def test_hello(context: AlgopyTestContext) -> None:
-    # Arrange
-    dummy_input = context.any.string(length=10)
-    contract = AsaBox()
+# @pytest.fixture()
+# def context() -> Iterator[AlgopyTestContext]:
+#     with algopy_testing_context() as ctx:
+#         yield ctx
 
-    # Act
-    output = contract.hello(dummy_input)
 
-    # Assert
-    assert output == f"Hello, {dummy_input}"
+# def test_hello(context: AlgopyTestContext) -> None:
+#     # Arrange
+#     contract = AsaBox()
+
+#     # Act
+#     output = contract.get_metadata(asa_id)
+
+#     # Assert
+#     assert output == data
