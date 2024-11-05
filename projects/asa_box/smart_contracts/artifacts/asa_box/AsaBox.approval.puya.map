@@ -1,0 +1,1073 @@
+{
+  "version": 3,
+  "sources": [
+    "../../asa_box/contract.py"
+  ],
+  "mappings": ";;;;;;;;;AAYA;;;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;AAAA;AAAA;AAIK;;AAAA;AAAA;AAAA;;AAAA;AAJL;;;AAAA;AAAA;;;AAAA;;;AAIK;;;AAAA;AAAA;AAaA;;AAAA;AAAA;AAAA;;AAAA;AAjBL;;;AAAA;AAiBK;;;AAAA;AAAA;AAmBA;;AAAA;AAAA;AAAA;;AAAA;AApCL;;;AAAA;AAoCK;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAWA;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AA/CL;;AAAA;;;;;;;;;AAAA;AAAA;AAIA;;;AAUe;;AAAc;;AAAd;AAAP;AACA;;AAAA;AAAA;AAAA;;AAAA;;AAAA;;AAER;;;AAMe;;AAAc;;AAAd;AAAP;AAIM;;AAAA;AAAA;AAAA;AAAA;AAFF;;AAAA;AAIJ;AAAA;;AACe;;;AAAA;AAAT;;;AAAA;AACN;AACa;;;;;;AADb;;;AAAA;;;AAAA;;AAKR;;;AAQe;;AAAc;;AAAd;AAAP;AACO;;AAAA;AAAA;AAAA;AAAP;AAER;;;AAGe;;AAAc;;AAAd;AAAP;AAEA;AACa;;AAGU;;;AAFZ;;;;;AAFX;;;AAAA;;;AAAA;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "smart_contracts.asa_box.contract.AsaBox.approval_program",
+      "params": {},
+      "block": "smart_contracts.asa_box.contract.AsaBox.approval_program",
+      "stack_in": [],
+      "op": "intcblock 1 0"
+    },
+    "5": {
+      "callsub": "smart_contracts.asa_box.contract.AsaBox.__puya_arc4_router__",
+      "op": "callsub __puya_arc4_router__",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "8": {
+      "op": "return",
+      "stack_out": []
+    },
+    "9": {
+      "subroutine": "smart_contracts.asa_box.contract.AsaBox.__puya_arc4_router__",
+      "params": {},
+      "block": "__puya_arc4_router__",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "12": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "14": {
+      "op": "bz __puya_arc4_router___bare_routing@8",
+      "stack_out": []
+    },
+    "17": {
+      "op": "pushbytess 0x220b5178 0xd5b0338b 0xdce22766 0x33b3499e // method \"update_metadata(uint64,string)void\", method \"delete_metadata(uint64)void\", method \"get_metadata(uint64)string\", method \"delete_application()void\""
+    },
+    "39": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(delete_application()void)",
+        "Method(delete_metadata(uint64)void)",
+        "Method(get_metadata(uint64)string)",
+        "Method(update_metadata(uint64,string)void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(update_metadata(uint64,string)void)",
+        "Method(delete_metadata(uint64)void)",
+        "Method(get_metadata(uint64)string)",
+        "Method(delete_application()void)",
+        "tmp%2#0"
+      ]
+    },
+    "42": {
+      "op": "match __puya_arc4_router___update_metadata_route@2 __puya_arc4_router___delete_metadata_route@3 __puya_arc4_router___get_metadata_route@4 __puya_arc4_router___delete_application_route@5",
+      "stack_out": []
+    },
+    "52": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "53": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "54": {
+      "block": "__puya_arc4_router___update_metadata_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "56": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "57": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "58": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "60": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "61": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "64": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "65": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "68": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "71": {
+      "callsub": "smart_contracts.asa_box.contract.AsaBox.update_metadata",
+      "op": "callsub update_metadata",
+      "stack_out": []
+    },
+    "74": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "75": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "76": {
+      "block": "__puya_arc4_router___delete_metadata_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "78": {
+      "op": "!",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "79": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "80": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "82": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "83": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "86": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "87": {
+      "callsub": "smart_contracts.asa_box.contract.AsaBox.delete_metadata",
+      "op": "callsub delete_metadata",
+      "stack_out": []
+    },
+    "90": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "91": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "92": {
+      "block": "__puya_arc4_router___get_metadata_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "94": {
+      "op": "!",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "95": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "96": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "tmp%19#0"
+      ]
+    },
+    "98": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "99": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "102": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "103": {
+      "callsub": "smart_contracts.asa_box.contract.AsaBox.get_metadata",
+      "op": "callsub get_metadata",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "106": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "107": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "108": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "109": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "112": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "113": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "114": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "120": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "121": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "122": {
+      "op": "log",
+      "stack_out": []
+    },
+    "123": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "124": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "125": {
+      "block": "__puya_arc4_router___delete_application_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "127": {
+      "op": "pushint 5 // DeleteApplication",
+      "defined_out": [
+        "DeleteApplication",
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0",
+        "DeleteApplication"
+      ]
+    },
+    "129": {
+      "op": "==",
+      "defined_out": [
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%25#0"
+      ]
+    },
+    "130": {
+      "op": "assert // OnCompletion is DeleteApplication",
+      "stack_out": []
+    },
+    "131": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%26#0"
+      ]
+    },
+    "133": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "134": {
+      "callsub": "smart_contracts.asa_box.contract.AsaBox.delete_application",
+      "op": "callsub delete_application"
+    },
+    "137": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "138": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "139": {
+      "block": "__puya_arc4_router___bare_routing@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "141": {
+      "op": "bnz __puya_arc4_router___after_if_else@12",
+      "stack_out": []
+    },
+    "144": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "146": {
+      "op": "!",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "147": {
+      "op": "assert // is creating",
+      "stack_out": []
+    },
+    "148": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "149": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "150": {
+      "block": "__puya_arc4_router___after_if_else@12",
+      "stack_in": [],
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "151": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "152": {
+      "subroutine": "smart_contracts.asa_box.contract.AsaBox.update_metadata",
+      "params": {
+        "asa_id#0": "uint64",
+        "data#0": "bytes"
+      },
+      "block": "update_metadata",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "155": {
+      "op": "txn Sender"
+    },
+    "157": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "159": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "160": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "161": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "asa_id#0 (copy)"
+      ],
+      "stack_out": [
+        "asa_id#0 (copy)"
+      ]
+    },
+    "163": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "164": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%3#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%3#0 (copy)"
+      ]
+    },
+    "165": {
+      "op": "box_del",
+      "defined_out": [
+        "tmp%3#0",
+        "{box_del}"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "{box_del}"
+      ]
+    },
+    "166": {
+      "op": "pop",
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "167": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "data#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "data#0 (copy)"
+      ]
+    },
+    "169": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "170": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "171": {
+      "subroutine": "smart_contracts.asa_box.contract.AsaBox.delete_metadata",
+      "params": {
+        "asa_id#0": "uint64"
+      },
+      "block": "delete_metadata",
+      "stack_in": [],
+      "op": "proto 1 0"
+    },
+    "174": {
+      "op": "txn Sender"
+    },
+    "176": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "178": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "179": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "180": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "asa_id#0 (copy)"
+      ],
+      "stack_out": [
+        "asa_id#0 (copy)"
+      ]
+    },
+    "182": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "183": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%5#0",
+        "tmp%5#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "tmp%5#0 (copy)"
+      ]
+    },
+    "184": {
+      "op": "box_len",
+      "defined_out": [
+        "check%0#0",
+        "tmp%5#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "185": {
+      "op": "assert // check self.asa_metadata entry exists",
+      "stack_out": [
+        "tmp%5#0",
+        "value%0#0"
+      ]
+    },
+    "186": {
+      "op": "pushint 8 // 8",
+      "defined_out": [
+        "8",
+        "tmp%5#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "value%0#0",
+        "8"
+      ]
+    },
+    "188": {
+      "op": "+",
+      "defined_out": [
+        "a#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "a#0"
+      ]
+    },
+    "189": {
+      "op": "swap",
+      "stack_out": [
+        "a#0",
+        "tmp%5#0"
+      ]
+    },
+    "190": {
+      "op": "box_del",
+      "defined_out": [
+        "a#0",
+        "{box_del}"
+      ],
+      "stack_out": [
+        "a#0",
+        "{box_del}"
+      ]
+    },
+    "191": {
+      "op": "pop",
+      "stack_out": [
+        "a#0"
+      ]
+    },
+    "192": {
+      "op": "pushint 400 // 400",
+      "defined_out": [
+        "400",
+        "a#0"
+      ],
+      "stack_out": [
+        "a#0",
+        "400"
+      ]
+    },
+    "195": {
+      "op": "*",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "196": {
+      "op": "pushint 2500 // 2500",
+      "defined_out": [
+        "2500",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0",
+        "2500"
+      ]
+    },
+    "199": {
+      "op": "+",
+      "defined_out": [
+        "mbr#0"
+      ],
+      "stack_out": [
+        "mbr#0"
+      ]
+    },
+    "200": {
+      "op": "itxn_begin"
+    },
+    "201": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0",
+        "mbr#0"
+      ],
+      "stack_out": [
+        "mbr#0",
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ]
+    },
+    "203": {
+      "op": "itxn_field Receiver"
+    },
+    "205": {
+      "op": "itxn_field Amount",
+      "stack_out": []
+    },
+    "207": {
+      "op": "intc_0 // pay",
+      "defined_out": [
+        "pay"
+      ],
+      "stack_out": [
+        "pay"
+      ]
+    },
+    "208": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "210": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "211": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "213": {
+      "op": "itxn_submit"
+    },
+    "214": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "215": {
+      "subroutine": "smart_contracts.asa_box.contract.AsaBox.get_metadata",
+      "params": {
+        "asa_id#0": "uint64"
+      },
+      "block": "get_metadata",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "218": {
+      "op": "txn Sender"
+    },
+    "220": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "222": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "223": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "224": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "asa_id#0 (copy)"
+      ],
+      "stack_out": [
+        "asa_id#0 (copy)"
+      ]
+    },
+    "226": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "227": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "228": {
+      "op": "assert // check self.asa_metadata entry exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "229": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "230": {
+      "subroutine": "smart_contracts.asa_box.contract.AsaBox.delete_application",
+      "params": {},
+      "block": "delete_application",
+      "stack_in": [],
+      "op": "proto 0 0"
+    },
+    "233": {
+      "op": "txn Sender"
+    },
+    "235": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "237": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "238": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "239": {
+      "op": "itxn_begin"
+    },
+    "240": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ]
+    },
+    "242": {
+      "op": "dup",
+      "defined_out": [
+        "inner_txn_params%0%%param_CloseRemainderTo_idx_0#0",
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0",
+        "inner_txn_params%0%%param_CloseRemainderTo_idx_0#0"
+      ]
+    },
+    "243": {
+      "op": "itxn_field CloseRemainderTo",
+      "stack_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ]
+    },
+    "245": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0",
+        "0"
+      ]
+    },
+    "246": {
+      "op": "itxn_field Amount",
+      "stack_out": [
+        "inner_txn_params%0%%param_Receiver_idx_0#0"
+      ]
+    },
+    "248": {
+      "op": "itxn_field Receiver",
+      "stack_out": []
+    },
+    "250": {
+      "op": "intc_0 // pay",
+      "defined_out": [
+        "pay"
+      ],
+      "stack_out": [
+        "pay"
+      ]
+    },
+    "251": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "253": {
+      "op": "intc_1 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "254": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "256": {
+      "op": "itxn_submit"
+    },
+    "257": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
